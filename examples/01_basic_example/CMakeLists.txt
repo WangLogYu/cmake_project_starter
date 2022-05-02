@@ -1,0 +1,2 @@
+add_executable(basic_example_01 basic_example_01.cc)
+target_link_libraries(basic_example_01 hello)
