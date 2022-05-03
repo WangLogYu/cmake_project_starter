@@ -23,6 +23,19 @@ SOFTWARE.
  
 ************************************************************************************/
 
+// =====================================================================================
+//       Filename:  basic_example_01.cc
+//
+//    Description: Sample code to build examples 
+//
+//        Version:  1.0
+//        Created:  04.05.2022
+//       Revision:  04.05.2022  
+//       Compiler:  g++/gcc
+//
+//         Author:  Wang,Yu(wang.log.yu@gmail.com)
+// =====================================================================================
+
 #include "include/hello.h"
 #include <string>
 
