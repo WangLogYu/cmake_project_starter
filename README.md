@@ -13,12 +13,12 @@ Latest update: 15th May, 2022
 ## TODO list
 
 - [x] A working template for CMake project
-- [] Add structure for (Unit)Tests
-- [] Add structure for Debug/Release build
-- [] Add link to repo: A Starter Template for OpenCV CMake Project
-- [] Add link to repo: A Simple VIM Config Guide to C/C++ Project 
-- [] Add coding style checker
-- [] Add automated CI/CD
+- [ ] Add structure for (Unit)Tests
+- [ ] Add structure for Debug/Release build
+- [ ] Add link to repo: A Starter Template for OpenCV CMake Project
+- [ ] Add link to repo: A Simple VIM Config Guide to C/C++ Project 
+- [ ] Add coding style checker
+- [ ] Add automated CI/CD
 
 ## Conventions
 - Target ISO C++14 by default
