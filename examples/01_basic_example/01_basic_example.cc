@@ -24,22 +24,24 @@ SOFTWARE.
 ************************************************************************************/
 
 // =====================================================================================
-//       Filename:  hello.cc
+//       Filename:  01_basic_example.cc
 //
-//    Description: Sample source file 
+//    Description:  sample code build examples 
 //
-//        Version:  1.0
+//        Version:  0.1 
 //        Created:  04.05.2022
-//       Revision:  04.05.2022  
 //       Compiler:  g++/gcc
 //
-//         Author:  Wang,Yu(wang.log.yu@gmail.com)
+//         Author:  Wang,Yu (wang.log.yu@gmail.com)
 // =====================================================================================
 
-#include "include/hello.h"
-#include <string>
-#include <iostream>
 
-void hello(const std::string& name) {
-  std::cout << "hello, " << name << "\n";
+#include "include/hello.h"
+#include "include/foo.h"
+
+int main() {
+  hello::hello("01_basic_example");
+  hello::foo("01_basic_example");
+
+  return 0;
 }

@@ -24,24 +24,34 @@ SOFTWARE.
 ************************************************************************************/
 
 // =====================================================================================
-//       Filename:  basic_example_00.cc
 //
-//    Description: Sample code build examples 
+//       Filename:  foo.cc
 //
-//        Version:  1.0
+//    Description:  sample source file 
+//
+//        Version:  0.1 
 //        Created:  04.05.2022
-//       Revision:  04.05.2022  
 //       Compiler:  g++/gcc
 //
-//         Author:  Wang,Yu(wang.log.yu@gmail.com)
+//         Author:  Wang,Yu (wang.log.yu@gmail.com)
+//
 // =====================================================================================
 
-#include "include/hello.h"
 #include <string>
+#include <iostream>
 
-int main() {
-  std::string my_name = "00_basic_example";
-  hello(my_name);
+#include "include/foo.h"
 
-  return 0;
+namespace hello {
+
+void foo(const std::string& str) {
+
+#ifdef FOO_ENABLE
+  std::cout << "foo string value: " << FOO_STRING << "\n";
+#else
+  std::cout << "foo string value not defined " << "\n";
+#endif
+
 }
+
+} // namespace hello

@@ -1,2 +1,11 @@
-add_executable(basic_example_01 basic_example_01.cc)
-target_link_libraries(basic_example_01 hello)
+message("entering cmake source dir: ${CMAKE_CURRENT_SOURCE_DIR}")
+
+add_executable(01_basic_example 01_basic_example.cc)
+
+list(APPEND INCLUDE_DIRS "${CMAKE_BINARY_DIR}")
+list(APPEND LINK_LIBS foo)
+
+target_include_directories(01_basic_example PUBLIC ${INCLUDE_DIRS})
+target_link_libraries(01_basic_example PUBLIC ${LINK_LIBS})
+
+message("leaving cmake source dir: ${CMAKE_CURRENT_SOURCE_DIR}")
