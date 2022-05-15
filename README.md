@@ -1,6 +1,30 @@
-### cmake_project_starter
+### A Simple Starter Template for CMake Project 
 
-Latest update: 2nd May, 2022
+Latest update: 15th May, 2022
+
+## Project Structure
+
+- assets: resources and config files, e.g. a.yaml, b.png
+- examples: example usage of the code/project
+- include: \*.h header files
+- src: \*.cc source files
+- tests: test cases
+
+## TODO list
+
+- [x] A working template for CMake project
+- [] Add structure for (Unit)Tests
+- [] Add structure for Debug/Release build
+- [] Add link to repo: A Starter Template for OpenCV CMake Project
+- [] Add link to repo: A Simple VIM Config Guide to C/C++ Project 
+- [] Add coding style checker
+- [] Add automated CI/CD
+
+## Conventions
+- Target ISO C++14 by default
+- All header files within top-level include are suffixed with .in (they will be configured in top-level CMakeLists)
+- Use ```namespace``` to scope your codes
+- All codes **MUST** have a ***copyright*** header
 
 ### Copyright
 MIT License, Copyright (c) 2022 Wang, Yu(wang.log.yu@gmail.com) 
