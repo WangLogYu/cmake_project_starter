@@ -36,7 +36,7 @@ Latest update: 31th May, 2022
     - Descriptiveness should be proportional to the name's scope of visibility[^2].
 - Naming Files[^2]:
   - Filenames should be lowercase and prefer using underscore "_". Make your filenames very specific.
-  - Each `.cc` file should be paired with a `.h` or `.h.in` file, e.g. `foo_bar.h` and ```foo_bar.cc``` defining a class named `FooBar`.
+  - Each `.cc` file should be paired with a `.h` or `.h.in` file, e.g. `foo_bar.h` and ```foo_bar.cc``` defining a class named `FooBar`. However, don't insist on placing each class declaration in its own source file[^1].
 - Naming Types[^2]: use `CammelCase` with a capital letter for each word, with no underscores for all types including classes, structs, type aliases, enums and type template parameters.
 - Naming Variables:
   - Prefer underscore style names[^1].
