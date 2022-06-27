@@ -1,6 +1,6 @@
 # A Simple Starter Template for CMake Project 
 
-Latest update: 31th May, 2022
+Latest update: 19th June, 2022
 
 ## Project Structure
 
@@ -25,7 +25,11 @@ Latest update: 31th May, 2022
 - Coding Styles are adapted and summarized from [GSL](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#main) and [GCSG](https://google.github.io/styleguide/cppguide.html); For more detailed explanation, refer to the original guidelines.
 
 ### Scoping
+#### Namespaces[^4]
 - Use `namespace` to scope your codes.
+#### Internal Linkage
+- Don't use internal linkage in `.h` file.
+- Give defintions in `.cc` file internal linkage if they do not need to be referenced outside file either by putting them within unnamed namespace or by declaring them `static`.
 
 ### Naming
 - General Rules:
@@ -107,4 +111,4 @@ SOFTWARE.
 [^1]: [C++ Core Guideline](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#main)
 [^2]: [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 [^3]: [Goolge C++ Style Guide: Formatting](https://google.github.io/styleguide/cppguide.html#Formatting)
-
+[^4]: [Goolge C++ Style Guide: Scoping](https://google.github.io/styleguide/cppguide.html#Scoping)
